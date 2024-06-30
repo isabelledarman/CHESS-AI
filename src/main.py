@@ -25,7 +25,7 @@ class Main:
             game.show_pieces(screen)
             for event in pygame.event.get():
 
-                if event.tupe == pygame.MOUSEBUTTONDOWN:
+                if event.type == pygame.MOUSEBUTTONDOWN:
                     dragger.update_mouse(event.pos)
                     
                     clicked_row = dragger.mouseX // SQSIZE
